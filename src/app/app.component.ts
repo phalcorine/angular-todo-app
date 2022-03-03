@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todos-app';
+  valueFor = "trojan";
+
+  nameValue = "Century";
+
+
+  toggle() {
+    // if(this.valueFor == "name") {
+    //   this.valueFor = "trojan";
+    // } else {
+    //   this.valueFor = "name";
+    // }
+
+    this.valueFor = this.valueFor == "name" ? "trojan" : "name";
+    alert("Value: " + this.nameValue);
+  }
 }
